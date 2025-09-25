@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page 1 -->
+  <div class="page active" id="page1">
+    <h1>Happy Birthday My Love ❤</h1>
+    <img src="pic/profilepic.jpg" class="profile-pic" alt="Profile">
+    <button class="tap-btn" onclick="blastThenPage2()">Tap</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="page" id="page2">
+    <div class="magic-box">
+      <div class="box" data-answer="iit chai cafe">
+        <div class="question">
+          <p>Where we met face to face?</p>
+          <div class="options">
+            <button onclick="checkAnswer(this,'iit chai cafe')">IIT Chai Cafe</button>
+            <button onclick="checkAnswer(this,'chai sutta bar')">Chai Sutta Bar</button>
+          </div>
+        </div>
+        <img src="pic/pic1.jpg" alt="Pic.1">
+      </div>
+      <div class="box" data-answer="1 year 7 months">
+        <div class="question">
+          <p>How much time of our relationship?</p>
+          <div class="options">
+            <button onclick="checkAnswer(this,'1 year 7 months')">1 year 7 months</button>
+            <button onclick="checkAnswer(this,'2 years')">2 years</button>
+          </div>
+        </div>
+        <img src="pic/pic2.jpg" alt="Pic 2">
+      </div>
+      <div class="box" data-answer="infinity">
+        <div class="question">
+          <p>How much you love me?</p>
+          <div class="options">
+            <button onclick="checkAnswer(this,'bhut zyada')">Bhut Zyada</button>
+            <button onclick="checkAnswer(this,'infinity')">Infinity ♾</button>
+          </div>
+        </div>
+        <img src="pic/pic3.jpg" alt="Pic 3">
+      </div>
+      <div class="box" data-answer="beta">
+        <div class="question">
+          <p>What would I most likely call you?</p>
+          <div class="options">
+            <button onclick="checkAnswer(this,'babe')">Babe</button>
+            <button onclick="checkAnswer(this,'beta')">Beta</button>
+          </div>
+        </div>
+        <img src="pic/pic4.jpg" alt="Pic 4">
+      </div>
+      <div class="box" data-answer="you, no doubt">
+        <div class="question">
+          <p>Who always wins an argument between us?</p>
+          <div class="options">
+            <button onclick="checkAnswer(this,'me, obv')">Me, obv</button>
+            <button onclick="checkAnswer(this,'you, no doubt')">You, no doubt</button>
+          </div>
+        </div>
+        <img src="pic/pic5.jpg" alt="Pic 5">
+      </div>
+    </div>
+
+    <button class="tap-btn" style="margin-top:25px;" onclick="goToPage3()">Go to Surprise 💖</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="page" id="page3">
+    <div class="kiss-wrapper">
+      <h1 class="love-text">Love Forever ❤</h1>
+      <div class="kiss-scene" id="kissScene">
+        <img src="pic/picgirl.jpg" class="teddy boy" alt="Boy Teddy">
+        <div class="kiss-bubble" id="kissBubble">💋</div>
+        <img src="pic/picboy.jpg" class="teddy girl" alt="Girl Teddy">
+        <div class="floating-heart" id="floatingHeart">❤️</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
